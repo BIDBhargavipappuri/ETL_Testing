@@ -21,4 +21,76 @@ SCD 2 – in SCD type 2, historical data can be tracked, changes will be stored 
 
 In this type there will be Surrogate key, effective start date, end date, active flag columns will be there.
 
-SCD type 3- no new row will be added , changes will be tracked in new column and we can see only one prior value , not full history can be viewed if multiple changes are done.
+SCD type 3- no new row will be added , changes will be tracked in new column and we can see only one prior value , not full history can be viewed if multiple changes are done
+
+# Checks Done as part of ETL testing –
+
+Meta Data Validation – 
+
+ETL Test Case Mapping (with SQL Examples)
+
+1.	Source Count Check- Verify number of records in source table.
+	
+ ```sql
+ SELECT COUNT(*) FROM crm.customers;  
+ ```
+
+2.	Active Filter Validation-Ensure only active customers are loaded
+
+   ```sql
+   SELECT COUNT(*) FROM staging.customers WHERE status <> 'Active';(Again, validating against BRD)
+  ```
+
+3.	Transformation Check-Confirm names are capitalized - (Again, validating against BRD)
+	
+   ```sql
+  	SELECT customer_name FROM staging.customers WHERE customer_name != UPPER(customer_name);
+   ```
+    
+5.	Duplicate Check-Ensure no duplicate customer IDs in target
+   
+   ```sql
+   SELECT customer_id, COUNT(*) FROM dw.customers GROUP BY customer_id HAVING COUNT(*) > 1;
+   ```
+
+5.	Row Count Match-Compare source active count with target count
+	
+    ```sql
+  	SELECT (SELECT COUNT(*) FROM crm.customers WHERE status = 'Active') AS source_count, (SELECT COUNT(*)
+    FROM dw.customers) AS target_count;
+    ```
+
+6.	Source – Target validation– Ensure every record from the source system is correctly loaded into the target system.
+	
+     ```sql
+     SELECT * FROM SRC
+     EXCEPT
+     SELECT * FROM TGT
+       ```
+
+7.	Target – Source validation - Ensure every record in the target system has a corresponding source record.
+    
+   ```sql
+  	SELECT * FROM TGT
+    EXCEPT
+    SELECT * FROM SRC
+  ```
+   	
+9.	SOURCE_INTERSECT_TARGET-- records that are common between the source and target tables — confirming successful data transfer for matching keys.
+    
+   ```sql
+  SELECT * FROM SRC
+  INTERSECT
+  SELECT * FROM TGT
+   ```
+  	
+10.	TARGET_INTERSECT_SOURCE - Identify records in the target that also exist in the source — confirming that target data has valid origins.
+
+
+ ```sql
+  SELECT * FROM TGT
+  INTERSECT
+  SELECT * FROM SRC
+ ```
+
+
