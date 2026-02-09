@@ -76,7 +76,7 @@ ETL Test Case Mapping (with SQL Examples)
     SELECT * FROM SRC
   ```
    	
-9.	SOURCE_INTERSECT_TARGET-- records that are common between the source and target tables — confirming successful data transfer for matching keys.
+8.	SOURCE_INTERSECT_TARGET-- records that are common between the source and target tables — confirming successful data transfer for matching keys.
     
    ```sql
   SELECT * FROM SRC
@@ -84,7 +84,7 @@ ETL Test Case Mapping (with SQL Examples)
   SELECT * FROM TGT
    ```
   	
-10.	TARGET_INTERSECT_SOURCE - Identify records in the target that also exist in the source — confirming that target data has valid origins.
+9.	TARGET_INTERSECT_SOURCE - Identify records in the target that also exist in the source — confirming that target data has valid origins.
 
 
  ```sql
