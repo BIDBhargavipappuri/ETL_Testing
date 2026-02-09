@@ -9,7 +9,7 @@ Testing tasks performed
 
 •SQL queries are used to check data accuracy, completeness, and consistency between source and target.
 
-•	Usually, Testers will test the data in target , compare results with source.
+•Usually, Testers will test the data in target , compare results with source.
 
 •SCD Types – Slowly changing dimensions- 
 
