@@ -29,7 +29,7 @@ Meta Data Validation –
 
 ETL Test Case Mapping (with SQL Examples)
 
-1.Source Count Check- Verify number of records in source table.
+1. Source Count Check- Verify number of records in source table.
 	
  ```sql
  SELECT COUNT(*) FROM crm.customers;  
