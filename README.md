@@ -62,19 +62,19 @@ FROM dw.customers) AS target_count;
 
 6.	Source – Target validation– Ensure every record from the source system is correctly loaded into the target system.
 	
-     ```sql
-     SELECT * FROM SRC
-     EXCEPT
-     SELECT * FROM TGT
-       ```
+```sql
+SELECT * FROM SRC
+EXCEPT
+SELECT * FROM TGT
+```
 
 7.	Target – Source validation - Ensure every record in the target system has a corresponding source record.
     
-   ```sql
-  	SELECT * FROM TGT
-    EXCEPT
-    SELECT * FROM SRC
-  ```
+```sql
+SELECT * FROM TGT
+EXCEPT
+SELECT * FROM SRC
+```
    	
 8.	SOURCE_INTERSECT_TARGET-- records that are common between the source and target tables — confirming successful data transfer for matching keys.
     
