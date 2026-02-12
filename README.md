@@ -47,11 +47,11 @@ SELECT COUNT(*) FROM staging.customers WHERE status <> 'Active';(Again, validati
 SELECT customer_name FROM staging.customers WHERE customer_name != UPPER(customer_name);
 ```
     
-5.	Duplicate Check-Ensure no duplicate customer IDs in target
+4.	Duplicate Check-Ensure no duplicate customer IDs in target
    
-   ```sql
-   SELECT customer_id, COUNT(*) FROM dw.customers GROUP BY customer_id HAVING COUNT(*) > 1;
-   ```
+```sql
+SELECT customer_id, COUNT(*) FROM dw.customers GROUP BY customer_id HAVING COUNT(*) > 1;
+ ```
 
 5.	Row Count Match-Compare source active count with target count
 	
