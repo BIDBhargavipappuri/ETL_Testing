@@ -55,10 +55,10 @@ SELECT customer_id, COUNT(*) FROM dw.customers GROUP BY customer_id HAVING COUNT
 
 5.	Row Count Match-Compare source active count with target count
 	
-    ```sql
-  	SELECT (SELECT COUNT(*) FROM crm.customers WHERE status = 'Active') AS source_count, (SELECT COUNT(*)
-    FROM dw.customers) AS target_count;
-    ```
+```sql
+SELECT (SELECT COUNT(*) FROM crm.customers WHERE status = 'Active') AS source_count, (SELECT COUNT(*)
+FROM dw.customers) AS target_count;
+```
 
 6.	Source – Target validation– Ensure every record from the source system is correctly loaded into the target system.
 	
