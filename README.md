@@ -43,9 +43,9 @@ SELECT COUNT(*) FROM staging.customers WHERE status <> 'Active';(Again, validati
 
 3.	Transformation Check-Confirm names are capitalized - (Again, validating against BRD)
 	
-   ```sql
-  	SELECT customer_name FROM staging.customers WHERE customer_name != UPPER(customer_name);
-   ```
+```sql
+SELECT customer_name FROM staging.customers WHERE customer_name != UPPER(customer_name);
+```
     
 5.	Duplicate Check-Ensure no duplicate customer IDs in target
    
