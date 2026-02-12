@@ -37,9 +37,9 @@ ETL Test Case Mapping (with SQL Examples)
 
 2.	Active Filter Validation-Ensure only active customers are loaded
 
-   ```sql
-   SELECT COUNT(*) FROM staging.customers WHERE status <> 'Active';(Again, validating against BRD)
-  ```
+```sql
+SELECT COUNT(*) FROM staging.customers WHERE status <> 'Active';(Again, validating against BRD)
+```
 
 3.	Transformation Check-Confirm names are capitalized - (Again, validating against BRD)
 	
