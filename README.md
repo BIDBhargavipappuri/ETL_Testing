@@ -82,10 +82,9 @@ SELECT * FROM SRC
  SELECT * FROM SRC
  INTERSECT
  SELECT * FROM TGT
-  ```
+ ```
   	
 9.	TARGET_INTERSECT_SOURCE - Identify records in the target that also exist in the source — confirming that target data has valid origins.
-
 
  ```sql
   SELECT * FROM TGT
