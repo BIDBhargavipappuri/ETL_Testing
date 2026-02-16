@@ -97,11 +97,11 @@ After performing above validations automation can also be done if in cases the s
 
 1.	ETL Testing Automation Workflow: Python → SQL → Power BI → Power Automate.
    
-3.	Develop Python scripts to run ETL test cases using SQL queries.
-4.	
-5.	Capture test results (pass/fail status, row counts, error messages) and store them in a structured SQL table- dedicated table.
-6.	
-7.	Connect Power BI Desktop to the SQL database containing etl_test_results and publish to power BI service and schedule refresh in service.
+2.	Develop Python scripts to run ETL test cases using SQL queries.
+	
+3.	Capture test results (pass/fail status, row counts, error messages) and store them in a structured SQL table- dedicated table.
+	
+4.	Connect Power BI Desktop to the SQL database containing etl_test_results and publish to power BI service and schedule refresh in service.
 	
 •	Design a dashboard to visualize:
 
@@ -113,7 +113,7 @@ After performing above validations automation can also be done if in cases the s
 
 •	Error summaries and timestamps
 
-8.  Create a Power Automate flow triggered by the refreshed Power BI dataset.
+5.  Create a Power Automate flow triggered by the refreshed Power BI dataset.
     
 •	If any test case fails:
 
@@ -123,9 +123,9 @@ After performing above validations automation can also be done if in cases the s
 
 9.	Automating and Scheduling Python ETL Test Script –
     
-If we schedule python script using Cron Job (Automation Engine) only email alert will be sent, no history, no detailed view, if any non-technical user it’s hard to understand. 
+10.If we schedule python script using Cron Job (Automation Engine) only email alert will be sent, no history, no detailed view, if any non-technical user it’s hard to understand. 
 
-But with power automated detailed visualization  can be provided as email alert.
+11. But with power automated detailed visualization  can be provided as email alert.
 
 
 
