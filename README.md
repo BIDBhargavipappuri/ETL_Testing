@@ -121,11 +121,11 @@ After performing above validations automation can also be done if in cases the s
 
     •   Optionally, include a link to the Power BI report for deeper analysis. 
 
-6.	Automating and Scheduling Python ETL Test Script –
+7.	Automating and Scheduling Python ETL Test Script –
     
-10.If we schedule python script using Cron Job (Automation Engine) only email alert will be sent, no history, no detailed view, if any non-technical user it’s hard to understand. 
+8. If we schedule python script using Cron Job (Automation Engine) only email alert will be sent, no history, no detailed view, if any non-technical user it’s hard to understand. 
 
-11. But with power automated detailed visualization  can be provided as email alert.
+9. But with power automated detailed visualization  can be provided as email alert.
 
 
 
