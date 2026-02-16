@@ -112,14 +112,14 @@ After performing above validations automation can also be done if in cases the s
 	    •Test-wise status breakdown
 
         •Error summaries and timestamps
-
-5.  Create a Power Automate flow triggered by the refreshed Power BI dataset.
+  	
+6.  Create a Power Automate flow triggered by the refreshed Power BI dataset.
     
-•	If any test case fails:
+    •	If any test case fails:
 
-•	Send an email to testers with a summary of failed cases and error details.
+    •	Send an email to testers with a summary of failed cases and error details.
 
-•	Optionally, include a link to the Power BI report for deeper analysis. 
+    •   Optionally, include a link to the Power BI report for deeper analysis. 
 
 6.	Automating and Scheduling Python ETL Test Script –
     
