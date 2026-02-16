@@ -103,15 +103,15 @@ After performing above validations automation can also be done if in cases the s
 	
 4.	Connect Power BI Desktop to the SQL database containing etl_test_results and publish to power BI service and schedule refresh in service.
 	
-•	Design a dashboard to visualize:
+    	•Design a dashboard to visualize:
 
-•	Total tests executed
+	    •Total tests executed
 
-•	Pass vs Fail counts
+	    •Pass vs Fail counts
 
-•	Test-wise status breakdown
+	    •Test-wise status breakdown
 
-•	Error summaries and timestamps
+        •Error summaries and timestamps
 
 5.  Create a Power Automate flow triggered by the refreshed Power BI dataset.
     
@@ -121,7 +121,7 @@ After performing above validations automation can also be done if in cases the s
 
 •	Optionally, include a link to the Power BI report for deeper analysis. 
 
-9.	Automating and Scheduling Python ETL Test Script –
+6.	Automating and Scheduling Python ETL Test Script –
     
 10.If we schedule python script using Cron Job (Automation Engine) only email alert will be sent, no history, no detailed view, if any non-technical user it’s hard to understand. 
 
