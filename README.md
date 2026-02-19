@@ -126,11 +126,14 @@ After performing above validations automation can also be done if in cases the s
 8. If we schedule python script using Cron Job (Automation Engine) only email alert will be sent, no history, no detailed view, if any non-technical user it’s hard to understand. 
 
 9. But with power automated detailed visualization  can be provided as email alert.
-p
+
 10. I built a Python-based ETL test automation engine(Attached .py file) and scheduled it using windows task scheduler.
     
-12. It logs results to SQL and integrates with Power BI for visualization and Power Automate for alerts. 
+11. It logs results to SQL and integrates with Power BI(import using SQL) for visualization and Power Automate for alerts.
+    
+
 How to schedule task in task scheduler in windows.
+
      Press Windows + S and search for Task Scheduler
 1.	Click Create Basic Task (right panel)
 2.	 Name: ETL Test Automation
