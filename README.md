@@ -139,8 +139,10 @@ After performing above validations automation can also be done if in cases the s
    1.	Click Create Basic Task (right panel)
    
    2.	Name: ETL Test Automation
-4.	Trigger: Choose Daily, set your preferred time (e.g., 7:00 AM)
-5.	Action: Choose Start a program
+      
+   3.	Trigger: Choose Daily, set your preferred time (e.g., 7:00 AM)
+      
+   4.	Action: Choose Start a program
 6.	Program/script: Paste the path to Python:  C:\Users\bharg\OneDrive\Desktop\ETL\run_sql_files.py
 7.	Click Finish. 
 
