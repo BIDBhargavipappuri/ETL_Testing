@@ -132,7 +132,7 @@ After performing above validations automation can also be done if in cases the s
 11. It logs results to SQL and integrates with Power BI(import using SQL) for visualization and Power Automate for alerts.
     
 
-          How to schedule task in task scheduler in windows.
+ #  How to schedule task in task scheduler in windows.
 
      Press Windows + S and search for Task Scheduler
     
