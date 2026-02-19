@@ -134,9 +134,9 @@ After performing above validations automation can also be done if in cases the s
 
  #  How to schedule task in task scheduler in windows.
 
-     Press Windows + S and search for Task Scheduler
+   1. Press Windows + S and search for Task Scheduler
     
-   1.	Click Create Basic Task (right panel)
+   2.	Click Create Basic Task (right panel)
    
    2.	Name: ETL Test Automation
       
