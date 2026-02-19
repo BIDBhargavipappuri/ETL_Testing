@@ -132,15 +132,17 @@ After performing above validations automation can also be done if in cases the s
 11. It logs results to SQL and integrates with Power BI(import using SQL) for visualization and Power Automate for alerts.
     
 
-How to schedule task in task scheduler in windows.
+          How to schedule task in task scheduler in windows.
 
      Press Windows + S and search for Task Scheduler
+    
 1.	Click Create Basic Task (right panel)
-2.	 Name: ETL Test Automation
-3.	Trigger: Choose Daily, set your preferred time (e.g., 7:00 AM)
-4.	Action: Choose Start a program
-5.	Program/script: Paste the path to Python:  C:\Users\bharg\OneDrive\Desktop\ETL\run_sql_files.py
-6.	Click Finish. 
+   
+3.	 Name: ETL Test Automation
+4.	Trigger: Choose Daily, set your preferred time (e.g., 7:00 AM)
+5.	Action: Choose Start a program
+6.	Program/script: Paste the path to Python:  C:\Users\bharg\OneDrive\Desktop\ETL\run_sql_files.py
+7.	Click Finish. 
 
 
 
